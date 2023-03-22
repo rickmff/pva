@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf7ec;
+}
+
+.wraper{
+    position: relative;
+    width: 80%;
+    margin: 1.25rem 0;
+}
+
+.logo {
+    margin: 2rem 0 1rem 0 !important;
+    height: 6.25rem !important;
+    width: auto;
+}
+
+h1{ 
+    font-size: 1.5625rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 1.7188rem; 
+    color: #053406;
+    text-align: center;
+    margin-top: 0.55rem;
+}
+
+h3{
+    font-size: 1.5625rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 1.7188rem; 
+    color: #053406;
+    text-align: center;
+    margin: 1.875rem 0;
+}
+
+.local{
+    font-size: .9375rem;
+    color: #053406;
+}
+
+.cidade{
+    width: 55%;
+    transition: 0.3s;
+    border-radius: 5%;
+}
+
+.cidade:hover{
+    background-color: aquamarine;
+    border-radius: 10%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.list ul{
+    width: 50%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    text-align: left;
+    /*display: block;*/
+    list-style: url(img/topic.png);
+    padding-inline-start: 2.5rem;
+    margin: 1.875rem 0;
+    color: #053406;
+    font-size: 1.5625rem;
+}
+
+.imgs {
+    height: 28.125rem;
+    display: flex;
+    gap: 1.875rem;
+    justify-content: center;
+}
+
+.imgs img {
+    width: 15.625rem;
+    transition: 0.3s;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.imgs div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    width: 18.75rem;
+}
+
+.imgs div img{
+    height: 50%;
+}
+
+.imgs img:hover {
+    border-radius: 7%;
+    opacity: 0.9;
+}
+
+.painel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+}
+
+.painel img {
+    transition: 0.3s;
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.painel img:hover {
+    background-color: rgb(190, 185, 185);
+    border-radius: 20%;
+}
