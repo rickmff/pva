@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    
 }
 
 body {
@@ -19,14 +18,21 @@ body {
 
 .wraper{
     position: relative;
-    width: 80%;
-    margin: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+@media screen and (min-width: 768px) {
+    .wraper{
+        padding: 0 1rem;
+    }
 }
 
 .logo {
-    margin: 2rem 0 1rem 0 !important;
-    height: 6.25rem !important;
-    width: auto;
+    margin: 3rem auto;
+    width: 180px;
+    display: flex;  
 }
 
 h1{ 
@@ -69,8 +75,10 @@ h3{
     cursor: pointer;
 }
 
-.list ul{
-    width: 50%;
+.vantagens-fotos-wraper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
 }
 
 .list {
@@ -88,11 +96,14 @@ ul{
     font-size: 1.5625rem;
 }
 
+li{
+    margin: 1.875rem 0;
+}
+
 .imgs {
     height: 28.125rem;
     display: flex;
     gap: 1.875rem;
-    justify-content: center;
 }
 
 .imgs img {
@@ -107,32 +118,24 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 1.875rem;
-    width: 18.75rem;
 }
 
 .imgs div img{
     height: 50%;
 }
 
-.imgs img:hover {
-    border-radius: 7%;
-    opacity: 0.9;
-}
-
 .painel {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .625rem;
+    gap: 1.25rem;
 }
 
 .painel img {
-    transition: 0.3s;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 4rem;
 }
 
 .painel img:hover {
     background-color: rgb(190, 185, 185);
-    border-radius: 20%;
+    border-radius: 20px;
 }
